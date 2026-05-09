@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Background (empty tank) -->
+    <item android:id="@android:id/background">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/tank_empty" />
+            <corners android:radius="12dp" />
+            <stroke android:width="2dp" android:color="@color/tank_border" />
+        </shape>
+    </item>
+
+    <!-- Filled water level -->
+    <item android:id="@android:id/progress">
+        <clip android:clipOrientation="horizontal" android:gravity="left">
+            <shape android:shape="rectangle">
+                <solid android:color="@color/water_blue" />
+                <corners android:radius="10dp" />
+            </shape>
+        </clip>
+    </item>
+
+</layer-list>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Jal-Sanchay Tracker</string>
+    <string name="setup_title">Setup Your Roof</string>
+    <string name="dashboard_title">Water Wealth Dashboard</string>
+    <string name="entry_title">Log Rainfall</string>
+    <string name="report_title">Monthly Report</string>
+    <string name="tips_title">Harvesting Tips</string>
+    <string name="litres_saved">Litres Saved</string>
+    <string name="household_days">Household Water Days</string>
+    <string name="no_entries">No entries yet. Log your first rainfall!</string>
+</resources>

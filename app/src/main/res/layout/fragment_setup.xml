@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- Header -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="💧"
+            android:textSize="48sp"
+            android:gravity="center"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Jal-Sanchay Setup"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_primary"
+            android:gravity="center"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter your roof and tank details to start tracking your Water Wealth"
+            android:textSize="14sp"
+            android:textColor="@color/text_secondary"
+            android:gravity="center"
+            android:layout_marginBottom="32dp"/>
+
+        <!-- Roof Area -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Roof Catchment Area"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_primary"
+            android:layout_marginBottom="4dp"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_roof_area"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="e.g. 500"
+            app:suffixText="sq.ft"
+            android:layout_marginBottom="20dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_roof_area"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:imeOptions="actionNext"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Tank Capacity -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Storage Tank Capacity"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_primary"
+            android:layout_marginBottom="4dp"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_tank_capacity"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="e.g. 1000"
+            app:suffixText="litres"
+            android:layout_marginBottom="20dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_tank_capacity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:imeOptions="actionNext"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Roof Type / Runoff -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Roof Surface Type"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_primary"
+            android:layout_marginBottom="4dp"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_runoff_type"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Select roof type"
+            android:layout_marginBottom="32dp">
+
+            <AutoCompleteTextView
+                android:id="@+id/actv_runoff_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:focusableInTouchMode="false"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_save_setup"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="Save &amp; Start Tracking"
+            android:textSize="16sp"
+            app:cornerRadius="12dp"/>
+
+    </LinearLayout>
+</ScrollView>

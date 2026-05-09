@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Brand Colors -->
+    <color name="water_blue">#1E88E5</color>
+    <color name="water_light">#E3F2FD</color>
+    <color name="water_dark">#0D47A1</color>
+    <color name="green_light">#E8F5E9</color>
+    <color name="green_dark">#1B5E20</color>
+
+    <!-- Backgrounds -->
+    <color name="background">#F5F7FA</color>
+    <color name="surface">#FFFFFF</color>
+
+    <!-- Text -->
+    <color name="text_primary">#1A1A2E</color>
+    <color name="text_secondary">#6B7280</color>
+
+    <!-- Tank visual -->
+    <color name="tank_empty">#E0F2FE</color>
+    <color name="tank_border">#90CAF9</color>
+
+    <!-- Info card -->
+    <color name="info_background">#EFF6FF</color>
+    <color name="info_text">#1D4ED8</color>
+
+    <!-- Primary (Material theme) -->
+    <color name="colorPrimary">#1E88E5</color>
+    <color name="colorPrimaryVariant">#1565C0</color>
+    <color name="colorOnPrimary">#FFFFFF</color>
+    <color name="colorSecondary">#26C6DA</color>
+    <color name="colorOnSecondary">#000000</color>
+    <color name="colorSurface">#FFFFFF</color>
+    <color name="colorOnSurface">#1A1A2E</color>
+    <color name="colorBackground">#F5F7FA</color>
+    <color name="colorOnBackground">#1A1A2E</color>
+    <color name="colorError">#B00020</color>
+    <color name="colorOnError">#FFFFFF</color>
+</resources>

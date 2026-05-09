@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Header -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Water Wealth Dashboard"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_primary"
+            android:layout_marginBottom="4dp"/>
+
+        <TextView
+            android:id="@+id/tv_entry_count"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0 entries logged"
+            android:textSize="13sp"
+            android:textColor="@color/text_secondary"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- Tank Visual Card -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="2dp"
+            app:cardBackgroundColor="@color/surface"
+            android:layout_marginBottom="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="🪣 Tank Level"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/text_primary"
+                    android:layout_marginBottom="12dp"/>
+
+                <!-- Tank container (horizontal progress bar styled as tank) -->
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:layout_marginBottom="8dp">
+
+                    <ProgressBar
+                        android:id="@+id/progress_tank"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:max="100"
+                        android:progress="0"
+                        android:progressDrawable="@drawable/tank_progress_drawable"
+                        android:scaleY="-1"/>
+
+                    <TextView
+                        android:id="@+id/tv_tank_percent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="0%"
+                        android:textSize="28sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/text_primary"/>
+                </FrameLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="of tank capacity filled"
+                    android:textSize="12sp"
+                    android:textColor="@color/text_secondary"
+                    android:gravity="center"/>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Litres Saved Today Card - Required by project spec -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="2dp"
+            app:cardBackgroundColor="@color/water_blue"
+            android:layout_marginBottom="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="💧 Litres Saved Today"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginBottom="4dp"/>
+
+                <TextView
+                    android:id="@+id/tv_today_litres"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="0.0 L"
+                    android:textSize="32sp"
+                    android:textStyle="bold"
+                    android:textColor="#FFFFFF"/>
+
+                <TextView
+                    android:id="@+id/tv_today_household_days"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="0.0 household water days"
+                    android:textSize="12sp"
+                    android:textColor="#CCFFFFFF"/>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Stats Row -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp">
+
+            <!-- Total Litres Card -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="2dp"
+                app:cardBackgroundColor="@color/water_light"
+                android:layout_marginEnd="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Total Saved"
+                        android:textSize="12sp"
+                        android:textColor="@color/water_dark"
+                        android:layout_marginBottom="4dp"/>
+
+                    <TextView
+                        android:id="@+id/tv_total_litres"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="0 L"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/water_dark"/>
+
+                    <TextView
+                        android:id="@+id/tv_household_days"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="0.0 household days"
+                        android:textSize="11sp"
+                        android:textColor="@color/water_dark"/>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Monthly Card -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="2dp"
+                app:cardBackgroundColor="@color/green_light"
+                android:layout_marginStart="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/tv_month_label"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="This Month"
+                        android:textSize="12sp"
+                        android:textColor="@color/green_dark"
+                        android:layout_marginBottom="4dp"/>
+
+                    <TextView
+                        android:id="@+id/tv_monthly_litres"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="0 L"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/green_dark"/>
+
+                    <TextView
+                        android:id="@+id/tv_impact_score"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Impact Score"
+                        android:textSize="11sp"
+                        android:textColor="@color/green_dark"/>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+
+        <!-- Chart Card -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="2dp"
+            app:cardBackgroundColor="@color/surface"
+            android:layout_marginBottom="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="📈 Last 7 Entries (Litres Saved)"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/text_primary"
+                    android:layout_marginBottom="12dp"/>
+
+                <com.github.mikephil.charting.charts.BarChart
+                    android:id="@+id/bar_chart"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"/>
+
+                <TextView
+                    android:id="@+id/tv_no_data"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:text="No data yet — log your first rainfall entry!"
+                    android:textSize="13sp"
+                    android:textColor="@color/text_secondary"
+                    android:gravity="center"
+                    android:visibility="gone"/>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Log Rainfall"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_primary"
+            android:layout_marginBottom="4dp"/>
+
+        <TextView
+            android:id="@+id/tv_entry_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/text_secondary"
+            android:layout_marginBottom="4dp"/>
+
+        <TextView
+            android:id="@+id/tv_setup_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="@color/water_blue"
+            android:layout_marginBottom="32dp"/>
+
+        <!-- Rainfall Input -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Today's Rainfall"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_primary"
+            android:layout_marginBottom="8dp"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_rainfall_mm"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter rainfall"
+            app:suffixText="mm"
+            android:layout_marginBottom="8dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_rainfall_mm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:textSize="18sp"
+                android:imeOptions="actionDone"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Live preview -->
+        <TextView
+            android:id="@+id/tv_litres_preview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="@color/water_blue"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="8dp"
+            android:visibility="gone"/>
+
+        <!-- Reference card -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="0dp"
+            app:cardBackgroundColor="@color/info_background"
+            android:layout_marginBottom="32dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="🌧️ Rainfall Reference"
+                    android:textSize="13sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/info_text"
+                    android:layout_marginBottom="6dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Light rain: 2–5 mm\nModerate rain: 10–20 mm\nHeavy rain: 30–50 mm\nVery heavy: 60–100+ mm"
+                    android:textSize="12sp"
+                    android:lineSpacingExtra="4dp"
+                    android:textColor="@color/info_text"/>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_log_rainfall"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="💧 Log Rainfall Entry"
+            android:textSize="16sp"
+            app:cornerRadius="12dp"/>
+
+    </LinearLayout>
+</ScrollView>

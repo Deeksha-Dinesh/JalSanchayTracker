@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/setupFragment"
+        android:icon="@drawable/ic_settings"
+        android:title="Setup" />
+
+    <item
+        android:id="@+id/dashboardFragment"
+        android:icon="@drawable/ic_dashboard"
+        android:title="Dashboard" />
+
+    <item
+        android:id="@+id/dataEntryFragment"
+        android:icon="@drawable/ic_add"
+        android:title="Log Rain" />
+
+    <item
+        android:id="@+id/monthlyReportFragment"
+        android:icon="@drawable/ic_report"
+        android:title="Report" />
+
+    <item
+        android:id="@+id/tipsFragment"
+        android:icon="@drawable/ic_tips"
+        android:title="Tips" />
+
+</menu>
