@@ -117,8 +117,3 @@ Where:
 🔗 [Watch Demo](https://drive.google.com/file/d/15Bl6-RylJKaSRZccWuMfzvQEtyJ7AnCs/view?usp=sharing)
 
 
-## Notes
-
-- **Launcher Icons**: Generate via Android Studio → right-click `res` → New → Image Asset
-- **Min SDK**: API 24 (Android 7.0) — covers ~94% of active devices
-- **Database**: Auto-created on first launch, persists across app restarts
