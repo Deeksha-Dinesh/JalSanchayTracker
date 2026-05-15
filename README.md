@@ -1,6 +1,18 @@
 # Jal-Sanchay Tracker 💧
 ### Android App — Rainwater Harvesting Tracker (Project #86)
 
+
+## Introduction
+
+The Jal-Sanchay Tracker is an Android application designed to help households measure and track the effectiveness of rainwater harvesting systems. The app converts rainfall data into meaningful insights like water saved (liters) and household usage days, encouraging sustainable water usage.
+
+---
+
+## Problem Statement
+
+Many households practice rainwater harvesting but lack tools to measure its effectiveness. Without measurable data, conservation efforts remain unclear and underutilized.
+
+
 ---
 
 ## Quick Start in Android Studio
@@ -9,6 +21,17 @@
 2. **Sync Gradle**: Click "Sync Now" when prompted (downloads all dependencies)
 3. **Add Launcher Icons**: Right-click `res` → New → Image Asset → create `ic_launcher`
 4. **Run**: Connect device or start emulator → click ▶ Run
+
+---
+
+---
+
+## 2. Tools & Technologies
+
+- **Language:** Kotlin  
+- **UI:** Jetpack Compose  
+- **Database:** Room DB  
+- **IDE:** Android Studio  
 
 ---
 
