@@ -112,6 +112,11 @@ Where:
 
 ---
 
+## Demo Video
+
+🔗 [Watch Demo](https://drive.google.com/file/d/15Bl6-RylJKaSRZccWuMfzvQEtyJ7AnCs/view?usp=sharing)
+
+
 ## Notes
 
 - **Launcher Icons**: Generate via Android Studio → right-click `res` → New → Image Asset
