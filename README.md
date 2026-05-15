@@ -78,7 +78,7 @@ Where:
 
 ---
 
-## 5 Screens
+## Screens
 
 | Screen | Purpose |
 |--------|---------|
