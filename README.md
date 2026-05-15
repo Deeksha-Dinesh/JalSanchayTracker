@@ -26,7 +26,7 @@ Many households practice rainwater harvesting but lack tools to measure its effe
 
 ---
 
-## 2. Tools & Technologies
+## Tools & Technologies
 
 - **Language:** Kotlin  
 - **UI:** Jetpack Compose  
