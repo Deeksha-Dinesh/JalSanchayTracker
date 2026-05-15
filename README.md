@@ -117,3 +117,15 @@ Where:
 🔗 [Watch Demo](https://drive.google.com/file/d/15Bl6-RylJKaSRZccWuMfzvQEtyJ7AnCs/view?usp=sharing)
 
 
+---
+
+## Future Enhancements
+
+- Integration with live weather APIs for automatic rainfall updates  
+- Cloud backup and synchronization using Firebase  
+- Export monthly water-saving reports as PDF files  
+- Integration with IoT sensors for real-time tank level monitoring  
+
+---
+
+
